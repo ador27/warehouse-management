@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../Firebase/firebase.init';
 import mail from '../../../Images/icons/mail.png'
 import password from '../../../Images/icons/password.png'
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -79,10 +80,8 @@ const Login = () => {
                     </p>
                     <button type='submit' value="button" className="px-4 py-2 rounded bg-blue-400 text-white hover:bg-blue-700 my-4 w-full" >Login</button>
                 </div>
+                <SocialLogin></SocialLogin>
             </form>
-
-
-
 
         </div>
     );

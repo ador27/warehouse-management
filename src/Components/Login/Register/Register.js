@@ -5,6 +5,7 @@ import password from '../../../Images/icons/password.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../Firebase/firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Register = () => {
@@ -75,7 +76,7 @@ const Register = () => {
                 <p>Already have an account?
                     <Link to="/login" className=' text-blue-500 no-underline mx-2'>Please Login</Link>
                 </p>
-
+                <SocialLogin></SocialLogin>
             </form>
 
         </div>
