@@ -4,6 +4,8 @@ import Blogs from './Components/Blogs/Blogs';
 import Home from './Components/Home/Home/Home';
 import Login from './Components/Login/Login/Login';
 import Register from './Components/Login/Register/Register';
+import RequireAuth from './Components/Login/RequireAuth/RequireAuth';
+import ManageItems from './Components/ManageItems/ManageItems';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 import NotFound from './Components/Shared/NotFound/NotFound';
@@ -14,6 +16,11 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/manageitems' element={
+          <RequireAuth>
+            <ManageItems />
+          </RequireAuth>
+        } />
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/register' element={<Register />} />
