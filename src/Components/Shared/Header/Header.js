@@ -21,6 +21,9 @@ const Header = () => {
             <div className='flex font-black gap-3 text-[16px]'>
                 <CustomLink to='/'>Home</CustomLink>
                 <CustomLink to='/blogs'>Blogs</CustomLink>
+                <CustomLink to='/manageitems'>Mange Items</CustomLink>
+                <CustomLink to='/additems'>Add Items</CustomLink>
+                <CustomLink to='/myitems'>My Items</CustomLink>
                 {
                     user ?
                         <CustomLink onClick={handleSignOut} to='/login'>Logout</CustomLink>
