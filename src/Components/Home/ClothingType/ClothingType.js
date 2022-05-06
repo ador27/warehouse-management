@@ -6,7 +6,7 @@ import PartyMarron from '../../../Images/images/IMG_0543.JPG';
 const ClothingType = () => {
     return (
         <div>
-            <h1 className='text-4xl m-12'>Clothing Types</h1>
+            <h1 className='text-4xl m-12 font-semibold'>Clothing Types</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 justify-items-center'>
                 <a href="www.facebook.com/theaffinity.bd">
                     <div className='max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>

@@ -22,7 +22,7 @@ const Header = () => {
                 <CustomLink to='/'>Home</CustomLink>
                 <CustomLink to='/blogs'>Blogs</CustomLink>
                 <CustomLink to='/manageitems'>Mange Items</CustomLink>
-                <CustomLink to='/additems'>Add Items</CustomLink>
+                <CustomLink to='/add/additems'>Add Items</CustomLink>
                 <CustomLink to='/myitems'>My Items</CustomLink>
                 {
                     user ?
