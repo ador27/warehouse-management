@@ -42,7 +42,7 @@ const AddItems = () => {
                 <input className='border-2 h-10 w-30 m-2' type="number" name='price' placeholder='Price' required /> <br />
                 <input className='border-2 h-10 w-30 m-2' type="number" name='quantity' placeholder='Quantity' required /> <br />
                 <input className='border-2 h-10 w-30 m-2' type="text" name='suppliername' placeholder='Supplier Name' required /> <br />
-                <input className='border-2 text-white bg-slate-600 px-4 py-1' type="submit" value="Add User" />
+                <input className='border-2 text-white bg-slate-600 px-4 py-1' type="submit" value="Add Item" />
 
             </form>
 
