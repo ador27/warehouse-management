@@ -15,7 +15,6 @@ const SocialLogin = () => {
 
     }
 
-
     if (user) {
         navigate('/');
     }

@@ -33,9 +33,6 @@ const Register = () => {
 
     const handleRegister = async (event) => {
         event.preventDefault();
-        // const name = event.target.username.value;
-        // const email = event.target.email.value;
-        // const password = event.target.password.value;
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;

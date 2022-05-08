@@ -52,10 +52,6 @@ const ManageItems = () => {
 
                     </div>)
                 }
-                {/*  {
-                    items.map(item => <h4>Product Name:{item.name} Description:{item.description}</h4>)
-                }
- */}
 
             </div>
         </div>
