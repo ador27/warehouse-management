@@ -65,14 +65,14 @@ const Login = () => {
                         <span className="z-highest rounded-l-lg w-10 h-10 flex justify-center items-center text-2xl text-gray-400 border border-r-0" mode="render" block="">
                             <img src={mail} alt="" />
                         </span>
-                        <input ref={emailRef} className="border border-gray-200 rounded-r-lg outline-none focus:ring-1 ring-blue-400 w-full pl-1" id="" name="email" required="true" placeholder="email" />
+                        <input ref={emailRef} className="border border-gray-200 rounded-r-lg outline-none focus:ring-1 ring-blue-400 w-full pl-1" id="" name="email" required={true} placeholder="email" />
                     </div>
 
                     <div className="my-4 flex flex-row">
                         <span className="z-highest rounded-l-lg w-10 h-10 flex justify-center items-center text-2xl text-gray-400 border border-r-0" mode="render" block="">
                             <img src={password} alt="" />
                         </span>
-                        <input type="password" ref={passwordRef} className="h-10 border border-gray-200 rounded-r-lg outline-none focus:ring-1 ring-blue-300 w-full pl-1" id="" name="password" placeholder="password" required="true" />
+                        <input type="password" ref={passwordRef} className="h-10 border border-gray-200 rounded-r-lg outline-none focus:ring-1 ring-blue-300 w-full pl-1" id="" name="password" placeholder="password" required={true} />
                     </div>
                     {errorElement}
                     <p>New to travel?
