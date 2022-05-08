@@ -11,6 +11,7 @@ import MyItems from './Components/MyItems/MyItems';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 import NotFound from './Components/Shared/NotFound/NotFound';
+import UpdateItem from './Components/UpdateItem/UpdateItem';
 
 function App() {
   return (
@@ -36,7 +37,9 @@ function App() {
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/update/:id' element={<UpdateItem />} />
         <Route path='*' element={<NotFound />} />
+
       </Routes>
       <Footer></Footer>
     </div>

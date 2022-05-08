@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Inventory = () => {
     const [items, setItems] = useState([]);
@@ -7,6 +8,7 @@ const Inventory = () => {
             .then(res => res.json())
             .then(data => setItems(data));
     }, [])
+
     return (
         <div>
             <h1 className='text-4xl m-20 font-semibold'>Manage your Inventory</h1>
@@ -24,6 +26,8 @@ const Inventory = () => {
                             <h2>Quantity: {item.quantity}</h2>
                             <h2>Supplier Name: {item.suppliername}</h2>
                         </div>
+
+                        <Link to={`/update/${item._id}`}><button className='border-4 bg-purple-800 m-10 h-12 px-4 py-1 text-white'>Update</button></Link>
 
                     </div>)
                 }
