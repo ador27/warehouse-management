@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ManageItems = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/add')
+        fetch('https://whispering-anchorage-20545.herokuapp.com/add')
             .then(res => res.json())
             .then(data => setItems(data));
     }, [])
@@ -13,7 +13,7 @@ const ManageItems = () => {
         const proceed = window.confirm('Are you sure you want to delete?');
         if (proceed) {
             console.log('deleting item with id,', id);
-            const url = `http://localhost:5000/add/${id}`;
+            const url = `https://whispering-anchorage-20545.herokuapp.com/add/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

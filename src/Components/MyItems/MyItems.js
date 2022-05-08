@@ -10,7 +10,7 @@ const MyItems = () => {
 
         const getItems = async () => {
             const email = item.email;
-            const url = `http://localhost:5000/myitems?email=${email}`;
+            const url = `https://whispering-anchorage-20545.herokuapp.com/myitems?email=${email}`;
             const { data } = await axios.get(url);
             setMyItems(data);
         }
@@ -22,7 +22,7 @@ const MyItems = () => {
         const proceed = window.confirm('Are you sure you want to delete?');
         if (proceed) {
             console.log('deleting item with id,', id);
-            const url = `http://localhost:5000/add/${id}`;
+            const url = `https://whispering-anchorage-20545.herokuapp.com/add/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

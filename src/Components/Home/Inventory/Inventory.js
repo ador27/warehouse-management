@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Inventory = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/add')
+        fetch('https://whispering-anchorage-20545.herokuapp.com/add')
             .then(res => res.json())
             .then(data => setItems(data));
     }, [])

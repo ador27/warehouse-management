@@ -15,7 +15,7 @@ const AddItems = () => {
 
 
 
-        fetch('http://localhost:5000/add', {
+        fetch('https://whispering-anchorage-20545.herokuapp.com/add', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
