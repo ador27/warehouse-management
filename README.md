@@ -1,8 +1,9 @@
-# Getting Started with Create React App
+# WareHouse Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Link: https://affinity-79d3a.web.app/
 
-## Available Scripts
-
-In the project directory, you can run:
+## Website Purpose:
+* Authentication Implementation.
+* Products Stocks and Delivery Update System.
+* ExpressJs CRUD Operation Implementation.
 
